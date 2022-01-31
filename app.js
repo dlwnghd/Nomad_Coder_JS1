@@ -50,24 +50,106 @@
 // dayOfWeek.push("sun");  // 배열의 맨 뒤에 추가됨
 // console.log(dayOfWeek);
 
-// Objects
-const player = {
-    name: "nico",   // String
-    points: 10,     // int
-    fat: true       // boolean
+// // Objects
+// const player = {
+//     name: "nico",   // String
+//     points: 10,     // int
+//     fat: true       // boolean
+// };
+// console.log(player);
+// console.log(player.name);
+// console.log(player["name"]);
+
+// // 재정의
+// player.fat = false;
+// console.log(player.fat);
+
+// // 추가
+// player.lastName = "potato"
+// console.log(player.lastName);
+
+// // 값 변경까지 가능ㄷㄷ
+// player.points = player.points + 15;
+// console.log(player.points);
+
+// funtion(java:메소드)
+
+// function이 없다면
+// console.log("Hello my name is Nico1");
+// console.log("Hello my name is Nico2");
+// console.log("Hello my name is Nico3");
+// console.log("Hello my name is Nico4");
+// console.log("Hello my name is Nico5");
+// console.log("Hello my name is Nico6");
+// console.log("Hello my name is Nico7");
+
+// function sayHello(nameOfPerson, age){   // 어떤값이어도 상관이 없나?(int, char, String, double, long)
+//     console.log("Hello my name is " + nameOfPerson + " " + age);
+// }
+
+// sayHello("nico1", 15);  // (argument)
+// sayHello("nico2", 20);
+// sayHello("nico3", 25);
+// sayHello("nico4", 35);
+// sayHello("nico5", 45);
+// sayHello()  // undefined도 가능함 function(메소드)는 무조건 실행
+
+// const player = {
+//     name: "nico",
+//     sayHello: function(otherPersonsName) {
+//         console.log("hello! " + otherPersonsName + " nice to meet you")
+//     },
+// };
+
+// player.sayHello("nico1");
+// player.sayHello("nico2");
+
+// // #Recap
+// const toBuy = ["potato", "tomato", "pizza"];
+
+// console.log(toBuy);
+// toBuy[2] = "water";
+// console.log(toBuy);
+// toBuy.push("meat"); // push는 오직 맨 뒤에 추가가 가능
+// console.log(toBuy);
+
+// // 배열을 선언할 때는 ~타입의 ~객체 = {}과 같다
+// const player = {
+//     name: "nico",
+//     age: 12,
+// };
+
+// console.log(player);
+// console.log(player.name);
+// player.sexy = "soon";
+// console.log(player);
+
+// function plus(firstNumber, secondNumber){
+//     console.log(firstNumber + secondNumber);
+// }
+
+// plus(4,5);
+
+const calculator = {    // calculaotr라는 클래스는
+    plus: function(a, b){   // plus라는 메소드로 a와 b를 받음
+        console.log(a+b);   // a+b출력
+    },
+    minus: function(a, b){   // minus라는 메소드로 a와 b를 받음
+        console.log(a-b);   // a-b출력
+    },
+    mul: function(a, b){   // mul라는 메소드로 a와 b를 받음
+        console.log(a*b);   // a*b출력
+    },
+    devide: function(a, b){   // devides라는 메소드로 a와 b를 받음
+        console.log(a/b);   // a/b출력
+    },
+    power: function(a, b){   // power라는 메소드로 a와 b를 받음
+        console.log(a**b);   // a**b출력
+    },
 };
-console.log(player);
-console.log(player.name);
-console.log(player["name"]);
 
-// 재정의
-player.fat = false;
-console.log(player.fat);
-
-// 추가
-player.lastName = "potato"
-console.log(player.lastName);
-
-// 값 변경까지 가능ㄷㄷ
-player.points = player.points + 15;
-console.log(player.points);
+calculator.plus(4,5);
+calculator.minus(4,5);
+calculator.mul(4,5);
+calculator.devide(4,5);
+calculator.power(4,5);
