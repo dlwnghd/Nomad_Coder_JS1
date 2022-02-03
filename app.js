@@ -130,26 +130,67 @@
 
 // plus(4,5);
 
+// const calculator = {    // calculaotr라는 클래스는
+//     plus: function(a, b){   // plus라는 메소드로 a와 b를 받음
+//         return(a+b);   // a+b출력
+//     },
+//     minus: function(a, b){   // minus라는 메소드로 a와 b를 받음
+//         return(a-b);   // a-b출력
+//     },
+//     mul: function(a, b){   // mul라는 메소드로 a와 b를 받음
+//         return(a*b);   // a*b출력
+//     },
+//     devide: function(a, b){   // devides라는 메소드로 a와 b를 받음
+//         return(a/b);   // a/b출력
+//     },
+//     power: function(a, b){   // power라는 메소드로 a와 b를 받음
+//         return(a**b);   // a**b출력
+//     },
+// };
+
+// calculator.plus(4,5);
+// calculator.minus(4,5);
+// calculator.mul(4,5);
+// calculator.devide(4,5);
+// calculator.power(4,5);
+
+// console.log(calculator.plus(2,3));
+
+
+// Returns
+const age = 96;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2; // return : 값을 돌려줌
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
+
 const calculator = {    // calculaotr라는 클래스는
     plus: function(a, b){   // plus라는 메소드로 a와 b를 받음
-        console.log(a+b);   // a+b출력
+        return(a+b);   // a+b출력
     },
     minus: function(a, b){   // minus라는 메소드로 a와 b를 받음
-        console.log(a-b);   // a-b출력
+        return(a-b);   // a-b출력
     },
-    mul: function(a, b){   // mul라는 메소드로 a와 b를 받음
-        console.log(a*b);   // a*b출력
+    times: function(a, b){   // mul라는 메소드로 a와 b를 받음
+        return(a*b);   // a*b출력
     },
-    devide: function(a, b){   // devides라는 메소드로 a와 b를 받음
-        console.log(a/b);   // a/b출력
+    divide: function(a, b){   // devides라는 메소드로 a와 b를 받음
+        return(a/b);   // a/b출력
     },
     power: function(a, b){   // power라는 메소드로 a와 b를 받음
-        console.log(a**b);   // a**b출력
+        return(a**b);   // a**b출력
     },
 };
 
-calculator.plus(4,5);
-calculator.minus(4,5);
-calculator.mul(4,5);
-calculator.devide(4,5);
-calculator.power(4,5);
+const plusResult = calculator.plus(2,3);
+const minusResult = calculator.minus(2,3);
+const timesResult = calculator.times(2,3);
+const divideResult = calculator.divide(2,3);
+
+console.log(plusResult);
+console.log(minusResult);
+console.log(timesResult);
+console.log(divideResult);
