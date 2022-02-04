@@ -158,39 +158,47 @@
 
 
 // Returns
-const age = 96;
-function calculateKrAge(ageOfForeigner){
-    return ageOfForeigner + 2; // return : 값을 돌려줌
-}
+// const age = 96;
+// function calculateKrAge(ageOfForeigner){
+//     return ageOfForeigner + 2; // return : 값을 돌려줌
+// }
 
-const krAge = calculateKrAge(age);
+// const krAge = calculateKrAge(age);
 
-console.log(krAge);
+// console.log(krAge);
 
-const calculator = {    // calculaotr라는 클래스는
-    plus: function(a, b){   // plus라는 메소드로 a와 b를 받음
-        return(a+b);   // a+b출력
-    },
-    minus: function(a, b){   // minus라는 메소드로 a와 b를 받음
-        return(a-b);   // a-b출력
-    },
-    times: function(a, b){   // mul라는 메소드로 a와 b를 받음
-        return(a*b);   // a*b출력
-    },
-    divide: function(a, b){   // devides라는 메소드로 a와 b를 받음
-        return(a/b);   // a/b출력
-    },
-    power: function(a, b){   // power라는 메소드로 a와 b를 받음
-        return(a**b);   // a**b출력
-    },
-};
+// const calculator = {    // calculaotr라는 클래스는
+//     plus: function(a, b){   // plus라는 메소드로 a와 b를 받음
+//         return(a+b);   // a+b출력
+//     },
+//     minus: function(a, b){   // minus라는 메소드로 a와 b를 받음
+//         return(a-b);   // a-b출력
+//     },
+//     times: function(a, b){   // mul라는 메소드로 a와 b를 받음
+//         return(a*b);   // a*b출력
+//     },
+//     divide: function(a, b){   // devides라는 메소드로 a와 b를 받음
+//         return(a/b);   // a/b출력
+//     },
+//     power: function(a, b){   // power라는 메소드로 a와 b를 받음
+//         return(a**b);   // a**b출력
+//     },
+// };
 
-const plusResult = calculator.plus(2,3);
-const minusResult = calculator.minus(2,3);
-const timesResult = calculator.times(2,3);
-const divideResult = calculator.divide(2,3);
+// const plusResult = calculator.plus(2,3);
+// const minusResult = calculator.minus(2,3);
+// const timesResult = calculator.times(2,3);
+// const divideResult = calculator.divide(2,3);
 
-console.log(plusResult);
-console.log(minusResult);
-console.log(timesResult);
-console.log(divideResult);
+// console.log(plusResult);
+// console.log(minusResult);
+// console.log(timesResult);
+// console.log(divideResult);
+
+
+// Conditionals(조건문)
+const age = parseInt(prompt("How old are you?")); // 사용자의 입력을 기다림
+
+console.log(typeof age);
+console.log(age);
+
