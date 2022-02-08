@@ -197,8 +197,20 @@
 
 
 // Conditionals(조건문)
+// const age = parseInt(prompt("How old are you?")); // 사용자의 입력을 기다림
+
+// console.log(typeof age);
+// console.log(age);
+
+
+// Conditionals par Two
 const age = parseInt(prompt("How old are you?")); // 사용자의 입력을 기다림
 
-console.log(typeof age);
-console.log(age);
+// isNaN() : (is not a Number)괄호안에 있는 값이 Number가 아니라면 false, 맞다면 true를 반환
+// console.log(isNaN(age));    // return boolean타입
 
+if(isNaN(age)){
+    console.log("Please write a number");
+} else {
+    console.log("Thank you for writing your age");
+}
