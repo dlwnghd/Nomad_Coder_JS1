@@ -203,14 +203,30 @@
 // console.log(age);
 
 
-// Conditionals par Two
-const age = parseInt(prompt("How old are you?")); // 사용자의 입력을 기다림
+// Conditionals part Two
+// const age = parseInt(prompt("How old are you?")); // 사용자의 입력을 기다림
 
 // isNaN() : (is not a Number)괄호안에 있는 값이 Number가 아니라면 false, 맞다면 true를 반환
 // console.log(isNaN(age));    // return boolean타입
 
-if(isNaN(age)){
-    console.log("Please write a number");
-} else {
-    console.log("Thank you for writing your age");
+// if(isNaN(age)){
+//     console.log("Please write a number");
+// }else{
+//     console.log("Thank you for writing your age");
+// }
+
+// Conditionals part Three
+
+const age = parseInt(prompt("How old are you?")); // 사용자의 입력을 기다림
+
+if(isNaN(age) || age < 0){
+    console.log("Please write a real positive number");
+}else if (age < 18){
+    console.log("You are too young to drink");
+}else if (age >= 18 && age <= 50){
+    console.log("You can drink");
+}else if (age > 50 && age <= 80){
+    console.log("You should exercise");
+}else if(age > 80){
+    console.log("You can do whatever you want.");
 }
